@@ -3,6 +3,7 @@ from random import randint
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_prime(number):
+
     if number <= 1:
         return False
     divisor = 2
@@ -14,6 +15,7 @@ def is_prime(number):
 
 
 def generate_round():
+    
     question = randint(1, 100)
     correct_answer = 'yes' if is_prime(question) else 'no'
     return str(question), correct_answer

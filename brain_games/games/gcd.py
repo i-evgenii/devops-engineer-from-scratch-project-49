@@ -5,6 +5,7 @@ MINIMAL_NUMBER = 10
 MAXIMAL_NUMBER = 100
 
 def gcd(number_a, number_b):
+
     remainder = number_a % number_b
     if not remainder:
         return number_b
@@ -12,6 +13,7 @@ def gcd(number_a, number_b):
 
 
 def generate_round():
+    
     number_a = randint(MINIMAL_NUMBER, MAXIMAL_NUMBER)
     number_b = randint(MINIMAL_NUMBER, MAXIMAL_NUMBER)
 

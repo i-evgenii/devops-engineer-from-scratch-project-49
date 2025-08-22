@@ -5,6 +5,7 @@ DESCRIPTION = 'What is the result of the expression?'
 SIGNS = '-+*'
 
 def calculate(sign, number_a, number_b):
+
     if sign == '-':
         operation = operator.sub
     elif sign == '+':
@@ -15,6 +16,7 @@ def calculate(sign, number_a, number_b):
 
 
 def generate_round():
+    
     number_a = randint(1, 10)
     number_b = randint(1, 10)
 

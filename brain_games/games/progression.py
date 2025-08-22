@@ -6,6 +6,7 @@ MAX_INITIAL_VALUE = 20
 MIN_STEP, MAX_STEP = -10, 10
 
 def get_question(init_value, step, index_of_hole):
+
     question = ''
     counter = 0
     while counter < PROGRESSION_LENGTH:
@@ -20,6 +21,7 @@ def get_question(init_value, step, index_of_hole):
     return question
 
 def generate_round():
+    
     init_value = randint(0, MAX_INITIAL_VALUE)
     step = randint(MIN_STEP, MAX_STEP)
     index_of_hole = randint(0, PROGRESSION_LENGTH - 1)

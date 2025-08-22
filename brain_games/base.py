@@ -3,6 +3,7 @@ import prompt
 ROUNDS_COUNT = 3
 
 def play(game):
+    
     print('Welcome to the Brain Games!')
     print(game.DESCRIPTION)
 
