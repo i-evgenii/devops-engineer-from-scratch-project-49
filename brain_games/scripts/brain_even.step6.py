@@ -4,9 +4,11 @@ from random import randint
 ROUNDS_COUNT = 3
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
+
 def is_even(number):
 
     return number % 2 == 0
+
 
 def make_num():
 
@@ -42,6 +44,7 @@ def main():
 
     print(f'Congratulations, {name}!')
 
+
 if __name__ == '__main__':
-    
+
     main()

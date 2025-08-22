@@ -1,8 +1,10 @@
 from random import randint
 
+
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 MINIMAL_NUMBER = 10
 MAXIMAL_NUMBER = 100
+
 
 def gcd(number_a, number_b):
 

@@ -26,4 +26,4 @@ package-install:
 	uv tool install dist/*.whl
 
 package-uninstall:
-	uv tool uninstall devops-engineer-from-scratch-project-49
+	uv tool uninstall hexlet-code
