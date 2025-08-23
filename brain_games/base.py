@@ -13,14 +13,14 @@ def play(game):
 
     count = ROUNDS_COUNT
     while count:
-        question, correct_answer = game.generate_round()
+        question, good_ans = game.generate_round()
 
         print("Question:", question)
-        answer = prompt.string("Your answer: ")
+        ans = prompt.string("Your answer: ")
 
-        if answer != correct_answer:
+        if ans != good_ans:
             print(
-                f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.",
+                f"{ans} is wrong answer ;(. Correct answer was {good_ans}.",
             )
             print(f"Let's try again, {name}!")
             return

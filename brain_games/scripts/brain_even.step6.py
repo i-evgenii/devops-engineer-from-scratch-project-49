@@ -11,8 +11,8 @@ def is_even(number):
 
 def make_num():
     question = randint(1, 100)
-    correct_answer = "yes" if is_even(question) else "no"
-    return str(question), correct_answer
+    good_ans = "yes" if is_even(question) else "no"
+    return str(question), good_ans
 
 
 def main():
@@ -23,14 +23,14 @@ def main():
 
     count = ROUNDS_COUNT
     while count:
-        question, correct_answer = make_num()
+        question, good_ans = make_num()
 
         print("Question:", question)
-        answer = prompt.string("Your answer: ")
+        ans = prompt.string("Your answer: ")
 
-        if answer != correct_answer:
+        if ans != good_ans:
             print(
-                f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.",
+                f"{ans} is wrong answer ;(. Correct answer was {good_ans}.",
             )
             print(f"Let's try again, {name}!")
             return
