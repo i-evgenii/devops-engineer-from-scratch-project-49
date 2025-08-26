@@ -39,4 +39,4 @@
    ```
 ### Пример:
 
-![](https://asciinema.org/a/sd1lrTg0a3e6Jl4drFR1P1kdE)
+[![asciicast](https://asciinema.org/a/sd1lrTg0a3e6Jl4drFR1P1kdE.svg)](https://asciinema.org/a/sd1lrTg0a3e6Jl4drFR1P1kdE)
