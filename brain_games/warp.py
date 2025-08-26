@@ -1,29 +1,18 @@
 import prompt
-from random import randint
 
 ROUNDS_COUNT = 3
-DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_even(number):
-    return number % 2 == 0
-
-
-def make_num():
-    question = randint(1, 100)
-    good_ans = "yes" if is_even(question) else "no"
-    return str(question), good_ans
-
-
-def main():
+def play(game):
     print("Welcome to the Brain Games!")
-    print(DESCRIPTION)
+    print(game.DESCRIPTION)
+
     name = prompt.string("May I have your name? ")
+
     print(f"Hello, {name}")
 
-    count = ROUNDS_COUNT
-    while count:
-        question, good_ans = make_num()
+    for num in range(ROUNDS_COUNT):
+        question, good_ans = game.generate_round()
 
         print("Question:", question)
         ans = prompt.string("Your answer: ")
@@ -36,10 +25,5 @@ def main():
             return
 
         print("Correct!")
-        count -= 1
 
     print(f"Congratulations, {name}!")
-
-
-if __name__ == "__main__":
-    main()

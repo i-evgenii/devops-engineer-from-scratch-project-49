@@ -1,5 +1,6 @@
-from brain_games import base, games
+from brain_games import warp
+from brain_games.games import prime
 
 
 def main():
-    base.play(games.prime)
+    warp.play(prime)

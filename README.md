@@ -39,4 +39,4 @@
    ```
 ### Пример:
 
-![](https://github.com/i-evgenii/devops-engineer-from-scratch-project-49/blob/main/brain-even.gif)
+![](https://asciinema.org/a/sd1lrTg0a3e6Jl4drFR1P1kdE)
