@@ -25,5 +25,5 @@ def play(game):
             return
 
         print("Correct!")
-
-    print(f"Congratulations, {name}!")
+    else:
+        print(f"Congratulations, {name}!")

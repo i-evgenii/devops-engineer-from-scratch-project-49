@@ -7,18 +7,17 @@ MIN_STEP, MAX_STEP = -10, 10
 
 
 def get_question(init_value, step, index_of_hole):
-    question = ""
-    counter = 0
-    while counter < PROGRESSION_LENGTH:
+    question = []
+
+    for counter in range(PROGRESSION_LENGTH):
         if counter > 0:
-            question += " "
+            question.insert(counter, " ")
         if counter == index_of_hole:
-            question += ".."
+            question.insert(counter, "..")
         else:
             current_value = init_value + step * counter
-            question += str(current_value)
-        counter += 1
-    return question
+            question.insert(counter, str(current_value))
+    return " ".join(question)
 
 
 def generate_round():
