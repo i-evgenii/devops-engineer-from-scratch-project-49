@@ -22,7 +22,7 @@ def play(game):
                 f"{ans} is wrong answer ;(. Correct answer was {good_ans}.",
             )
             print(f"Let's try again, {name}!")
-            return
+            break
 
         print("Correct!")
     else:
