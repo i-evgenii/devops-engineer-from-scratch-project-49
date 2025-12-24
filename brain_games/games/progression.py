@@ -7,14 +7,10 @@ MIN_STEP, MAX_STEP = -10, 10
 
 
 def get_question(init_value, step, index_of_hole):
-    progression = list(range(
-        init_value, 
-        init_value + step * PROGRESSION_LENGTH, 
-        step
-    ))
+    progression = list(range(init_value, init_value + step * PROGRESSION_LENGTH, step))
 
     progression[index_of_hole] = ".."
-    
+
     return " ".join(str(item) for item in progression)
 
 
