@@ -19,6 +19,9 @@ def generate_round():
     step = randint(MIN_STEP, MAX_STEP)
     index_of_hole = randint(0, PROGRESSION_LENGTH - 1)
 
+    while step == 0:
+        step = randint(MIN_STEP, MAX_STEP)
+
     question = get_question(init_value, step, index_of_hole)
     correct_answer = init_value + step * index_of_hole
 
