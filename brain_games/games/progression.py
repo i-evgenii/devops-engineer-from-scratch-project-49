@@ -7,7 +7,7 @@ MIN_STEP, MAX_STEP = -10, 10
 
 
 def get_question(init_value, step, index_of_hole):
-    progression = list(range(init_value, init_value + step * PROGRESSION_LENGTH, step))
+    progression = [init_value + step * i for i in range(PROGRESSION_LENGTH)]
 
     progression[index_of_hole] = ".."
 
@@ -18,9 +18,6 @@ def generate_round():
     init_value = randint(0, MAX_INITIAL_VALUE)
     step = randint(MIN_STEP, MAX_STEP)
     index_of_hole = randint(0, PROGRESSION_LENGTH - 1)
-
-    while step == 0:
-        step = randint(MIN_STEP, MAX_STEP)
 
     question = get_question(init_value, step, index_of_hole)
     correct_answer = init_value + step * index_of_hole
